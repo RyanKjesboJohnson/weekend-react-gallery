@@ -5,7 +5,7 @@ function GalleryList ({dogsArray}) {
         <div data-testid="galleryList" className="galleryList">
             <h2>Where my dogs at?</h2>
             {dogsArray.map(dog => (
-                <div key={dog.id} >
+                <div key={dog.id} data-testid="galleryItem" >
                     <img className="dogCard" src = {dog.url} alt= 'This is a picture of a dog.'/>
                     <h3>{dog.title}</h3>
                 </div>  

@@ -47,7 +47,7 @@ To practice passing values as `props` in React, you must build your gallery app 
 [X] `App`: Represents the overall application or site.
   * The App must have a `data-testid="app"` attribute
 
-* `GalleryList`: Represents the gallery of images.
+[X] `GalleryList`: Represents the gallery of images.
   * The GalleryList must have a `data-testid="galleryList"` attribute
 
 * `GalleryItem` - represents a single image in the gallery.
