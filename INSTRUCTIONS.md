@@ -48,10 +48,10 @@ To practice passing values as `props` in React, you must build your gallery app 
   * The App must have a `data-testid="app"` attribute
 
 [X] `GalleryList`: Represents the gallery of images.
-  * The GalleryList must have a `data-testid="galleryList"` attribute
+  [X] The GalleryList must have a `data-testid="galleryList"` attribute
 
 * `GalleryItem` - represents a single image in the gallery.
-  * Each GalleryItem must have a `data-testid="galleryItem"` attribute
+  [X] Each GalleryItem must have a `data-testid="galleryItem"` attribute
   * Each GalleryItem must display the title.
   * Each GalleryItem must toggle between showing the image and the description when clicked:
     * When clicking on a GalleryItem, the description shows and the image hides, and vice versa upon clicking again.
@@ -82,11 +82,11 @@ This is the most complex thing you've built here, so far. We've decided to provi
 #### Client-Side:
 
 * Create a `GalleryList` component that:
-  * When it loads, obtains the array of gallery item objects from `GET /gallery`, then stores it in a piece of React state.
-  * In its `return` statement, `.map`s through the array of gallery item objects that are stored in React state to display each gallery item.
+  [X] When it loads, obtains the array of gallery item objects from `GET /gallery`, then stores it in a piece of React state.
+  [X] In its `return` statement, `.map`s through the array of gallery item objects that are stored in React state to display each gallery item.
 * Create a `GalleryItem` component that:
-  * Will be used to display a single gallery item.
-  * Expects to receive a single gallery item object as a prop. (These will be rendered inside the `GalleryList`'s `.map`.)
+  [X] Will be used to display a single gallery item.
+  [X] Expects to receive a single gallery item object as a prop. (These will be rendered inside the `GalleryList`'s `.map`.)
   * Toggles between showing the image and description on click. Use [conditional rendering](https://react.dev/learn/conditional-rendering).
   * Displays a gallery item's current number likes.
   * Contains a "like" button that, when clicked, will fire off a `PUT /gallery/like/:id` request.
