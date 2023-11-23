@@ -5,14 +5,14 @@ Before you get started make sure to look through the code that has been provided
 ## Get Set Up:
 
 You'll need to:
-* `npm install` to install the dependencies specified by `package.json`.
-* Use Postico to create a new database named `react-gallery`.
-* Run the SQL queries found in `database.sql` in order to:
-  * Create the `gallery` table.
-  * Seed the `gallery` table with one example gallery item.
-* Run `npm run server` to start the Express server with `nodemon`.
-* Run `npm run client` to start the React app.
-* Run `npm test` to verify that the automated test suite runs. You should see something like this:
+[X] `npm install` to install the dependencies specified by `package.json`.
+[X] Use Postico to create a new database named `react-gallery`.
+[X] Run the SQL queries found in `database.sql` in order to:
+  [X] Create the `gallery` table.
+  [X] Seed the `gallery` table with one example gallery item.
+[X] Run `npm run server` to start the Express server with `nodemon`.
+[X] Run `npm run client` to start the React app.
+[X] Run `npm test` to verify that the automated test suite runs. You should see something like this:
   * <img src="instructions_images/test-run.png" width="400px">
 
 #### Add Your Own Seed Data:
