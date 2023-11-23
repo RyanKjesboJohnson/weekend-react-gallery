@@ -44,7 +44,7 @@ Users should be able to:
 
 To practice passing values as `props` in React, you must build your gallery app using multiple components: `App`, `GalleryList`, and `GalleryItem`.
 
-* `App`: Represents the overall application or site.
+[X] `App`: Represents the overall application or site.
   * The App must have a `data-testid="app"` attribute
 
 * `GalleryList`: Represents the gallery of images.
@@ -76,8 +76,8 @@ This is the most complex thing you've built here, so far. We've decided to provi
 
  #### Server-Side:
 
-* Implement the `GET /gallery` route so that it will send back the array of gallery item objects as its response.
-* Implement the `PUT /gallery/like/:id` route so that it will increment a given gallery item's `likes` value by `1` and send back HTTP status code `200` as its response. 
+[X] Implement the `GET /gallery` route so that it will send back the array of gallery item objects as its response.
+[X] Implement the `PUT /gallery/like/:id` route so that it will increment a given gallery item's `likes` value by `1` and send back HTTP status code `200` as its response. 
 
 #### Client-Side:
 
