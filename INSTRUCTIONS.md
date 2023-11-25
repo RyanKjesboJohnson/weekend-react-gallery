@@ -89,7 +89,7 @@ This is the most complex thing you've built here, so far. We've decided to provi
   [X] Expects to receive a single gallery item object as a prop. (These will be rendered inside the `GalleryList`'s `.map`.)
   * Toggles between showing the image and description on click. Use [conditional rendering](https://react.dev/learn/conditional-rendering).
   * Displays a gallery item's current number likes.
-  * Contains a "like" button that, when clicked, will fire off a `PUT /gallery/like/:id` request.
+  [X] Contains a "like" button that, when clicked, will fire off a `PUT /gallery/like/:id` request.
 
 ---
 

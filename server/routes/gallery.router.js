@@ -5,6 +5,7 @@ const pool = require('../modules/pool')
 // PUT /gallery/like/:id
 router.put('/like/:id', (req, res) => {
   const idOfDog = req.params.id;
+  console.log(idOfDog);
   const sqlText = 
     `
     UPDATE gallery

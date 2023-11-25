@@ -4,8 +4,10 @@ import { Card, CardContent, CardMedia, Grid, Typography, CardActions, Button} fr
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import LikeButton from "../LikeButton/LikeButton";
+import axios from "axios";
 
-function GalleryList ({dogsArray}) {
+function GalleryList ({dogsArray, whereMyDogsAt}) {
     const Item = styled(Paper)(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
         ...theme.typography.body2,
@@ -19,12 +21,12 @@ function GalleryList ({dogsArray}) {
              <Typography variant="h3" gutterBottom>
                 Where my dogs at?
             </Typography>
-            <div data-testid="galleryList" >
-            <Grid container spacing={0}>
+            <div >
+            <Grid container spacing={0} data-testid="galleryList" >
                 {dogsArray.map(dog => (
-                    <Grid xs={4} data-testid="galleryItem">
-                    <Item sx={{ maxWidth: 600}}>
-                    <Card key={dog.id} >
+                    <Grid xs={4} key = {dog.id}>
+                    <Item sx={{ maxWidth: 600}} data-testid="galleryItem">
+                    <Card >
                         <CardMedia 
                         sx={{height: 140}} 
                         image = {dog.url} 
@@ -36,7 +38,7 @@ function GalleryList ({dogsArray}) {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="large">🤍</Button>
+                            <LikeButton id = {dog.id} whereMyDogsAt = {whereMyDogsAt} />
                         </CardActions>
                     </Card>
                     </Item>
