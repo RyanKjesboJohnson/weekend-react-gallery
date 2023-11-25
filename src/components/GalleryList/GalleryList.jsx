@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import LikeButton from "../LikeButton/LikeButton";
 import axios from "axios";
+import DogCardClick from "../DogCardClick/DogCardClick";
 
 function GalleryList ({dogsArray, whereMyDogsAt}) {
     const Item = styled(Paper)(({ theme }) => ({
@@ -27,11 +28,7 @@ function GalleryList ({dogsArray, whereMyDogsAt}) {
                     <Grid xs={4} key = {dog.id}>
                     <Item sx={{ maxWidth: 600}} data-testid="galleryItem">
                     <Card >
-                        <CardMedia 
-                        sx={{height: 140}} 
-                        image = {dog.url} 
-                        title= 'This is a picture of a dog.'
-                        />
+                        <DogCardClick dog = {dog}/>
                         <CardContent>
                             <Typography gutterBottom variant="h3" component="div" >
                                 {dog.title}

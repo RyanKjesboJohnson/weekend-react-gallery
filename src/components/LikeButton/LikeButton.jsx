@@ -16,10 +16,10 @@ function LikeButton({id, whereMyDogsAt}) {
         }
 
     return(
-        <Button onClick={addLike} size="large">🤍</Button>
+        <Button data-testid="like" onClick={addLike} size="large">🤍</Button>
     )
 
 }
 
-export default LikeButton
+export default LikeButton;
 

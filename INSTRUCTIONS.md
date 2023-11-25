@@ -52,10 +52,10 @@ To practice passing values as `props` in React, you must build your gallery app 
 
 * `GalleryItem` - represents a single image in the gallery.
   [X] Each GalleryItem must have a `data-testid="galleryItem"` attribute
-  * Each GalleryItem must display the title.
-  * Each GalleryItem must toggle between showing the image and the description when clicked:
-    * When clicking on a GalleryItem, the description shows and the image hides, and vice versa upon clicking again.
-    * The element that a user clicks to toggle must have the `data-testid="toggle"` attribute.
+  [X] Each GalleryItem must display the title.
+  [X] Each GalleryItem must toggle between showing the image and the description when clicked:
+    [X] When clicking on a GalleryItem, the description shows and the image hides, and vice versa upon clicking again.
+    [X] The element that a user clicks to toggle must have the `data-testid="toggle"` attribute.
     * A GalleryItem's image must be an `img` tag.
     * The element that contains a GalleryItem's description text must have the `data-testid="description"` attribute.
   * Each GalleryItem must have a way to like a post when clicking on an element with `data-testid="like"`
