@@ -1,12 +1,13 @@
-import { Height } from "@mui/icons-material";
-import { styled } from '@mui/material/styles';
-import { Card, CardContent, CardMedia, Grid, Typography, CardActions, Button} from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import LikeButton from "../LikeButton/LikeButton";
 import axios from "axios";
+import { Height } from "@mui/icons-material";
+import { styled } from '@mui/material/styles';
+import { Card, CardContent, CardMedia, Grid, Typography, CardActions, Button} from "@mui/material";
+
 import DogCardClick from "../DogCardClick/DogCardClick";
+import LikeButton from "../LikeButton/LikeButton";
 
 function GalleryList ({dogsArray, whereMyDogsAt}) {
     const Item = styled(Paper)(({ theme }) => ({
@@ -25,7 +26,7 @@ function GalleryList ({dogsArray, whereMyDogsAt}) {
             <div >
             <Grid container spacing={0} data-testid="galleryList" >
                 {dogsArray.map(dog => (
-                    <Grid xs={4} key = {dog.id}>
+                    <Grid xs={false} item={true} key = {dog.id}>
                     <Item sx={{ maxWidth: 600}} data-testid="galleryItem">
                     <Card >
                         <DogCardClick dog = {dog}/>

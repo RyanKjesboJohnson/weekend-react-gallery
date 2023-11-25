@@ -1,12 +1,14 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Axios from 'axios';
-import GalleryList from '../GalleryList/GalleryList';
-import './App.css';
 import { ThemeProvider, Typography, createTheme } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Box from "@mui/material/Box";
+
+import './App.css';
+import GalleryList from '../GalleryList/GalleryList';
+
 
 
 
@@ -46,7 +48,7 @@ function App() {
     <Container maxWidth="lg">
       <header>
       <Typography variant="h1" gutterBottom>
-        Foster Dogs
+        Happy Endings
       </Typography>
       </header>
       <GalleryList dogsArray = {dogsArray} whereMyDogsAt = {whereMyDogsAt}/>
